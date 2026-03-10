@@ -26,7 +26,7 @@ jobs:
         with: { ref: deploy }
       - name: Build
         run: |
-          wget -O sanity https://github.com/nonk123/sanity/releases/download/gh-actions/sanity-release-linux
+          wget -O sanity https://github.com/nonk123/sanity/releases/latest/download/sanity-linux
           chmod +x sanity
           RUST_LOG=debug ./sanity
       - name: Setup Pages
